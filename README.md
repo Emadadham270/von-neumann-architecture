@@ -1,5 +1,7 @@
 5-Stage Pipelined Processor – README
 Overview
+  
+
 
 This project implements a simple 5-stage pipelined Von Neumann processor with a unified memory for instructions and data.
 The processor supports a RISC-like ISA, eight 32-bit general-purpose registers, stack operations, interrupt handling, and full pipelined execution.
@@ -7,7 +9,7 @@ The processor supports a RISC-like ISA, eight 32-bit general-purpose registers, 
 This project was completed as part of CMP3010 – Computer Architecture, Faculty of Engineering, Cairo University.
 
 Features
-✔ 5-Stage Pipeline
+ 5-Stage Pipeline
 
 IF – Instruction Fetch
 
