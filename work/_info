@@ -8,3 +8,44 @@ z2
 !i10f 100
 cModel Technology
 dD:/2nd cmp/arch labs/project
+Ememory
+Z0 w1764914377
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/2nd cmp/arch labs/project/von-neumann-architecture
+Z5 8D:/2nd cmp/arch labs/project/von-neumann-architecture/src/memory.vhd
+Z6 FD:/2nd cmp/arch labs/project/von-neumann-architecture/src/memory.vhd
+l0
+L7
+VDnNa3F@O6O2Wdc9i[]Dno1
+!s100 8i>YOPXB[X96ma]>X]lA92
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1764914389
+!i10b 1
+Z9 !s108 1764914389.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/2nd cmp/arch labs/project/von-neumann-architecture/src/memory.vhd|
+Z11 !s107 D:/2nd cmp/arch labs/project/von-neumann-architecture/src/memory.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+DEx4 work 6 memory 0 22 DnNa3F@O6O2Wdc9i[]Dno1
+l66
+L18
+V[P@ZdbaDT^bSGNJQPnQYz1
+!s100 ldoaJ1F]]E<1JSNz0f9m32
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

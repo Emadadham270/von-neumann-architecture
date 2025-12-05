@@ -1,0 +1,50 @@
+{D:/2nd cmp/arch labs/project/von-neumann-architecture/src/datapath.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/datapath.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/2nd cmp/arch labs/project/von-neumann-architecture/src/datapath.vhd(1): (vcom-1491) Empty source files.
+
+} {} {}} {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/tb_proccessor.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/tb_proccessor.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/2nd cmp/arch labs/project/von-neumann-architecture/src/tb_proccessor.vhd(1): (vcom-1491) Empty source files.
+
+} {} {}} {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/register_file.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/register_file.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/2nd cmp/arch labs/project/von-neumann-architecture/src/register_file.vhd(1): (vcom-1491) Empty source files.
+
+} {} {}} {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/control_unit.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/control_unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/2nd cmp/arch labs/project/von-neumann-architecture/src/control_unit.vhd(1): (vcom-1491) Empty source files.
+
+} {} {}} {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/memory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/memory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity memory
+-- Compiling architecture rtl of memory
+
+} {} {}} {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/processor_top.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/processor_top.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/2nd cmp/arch labs/project/von-neumann-architecture/src/processor_top.vhd(1): (vcom-1491) Empty source files.
+
+} {} {}} {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/pc_unit.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/pc_unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/2nd cmp/arch labs/project/von-neumann-architecture/src/pc_unit.vhd(1): (vcom-1491) Empty source files.
+
+} {} {}} {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/immediate_unit.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/immediate_unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/2nd cmp/arch labs/project/von-neumann-architecture/src/immediate_unit.vhd(1): (vcom-1491) Empty source files.
+
+} {} {}} {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/alu.vhd} {0 {vcom -work work -2002 -explicit -stats=none {D:/2nd cmp/arch labs/project/von-neumann-architecture/src/alu.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+** Error (suppressible): D:/2nd cmp/arch labs/project/von-neumann-architecture/src/alu.vhd(1): (vcom-1491) Empty source files.
+
+} {} {}}

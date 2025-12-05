@@ -1,0 +1,5 @@
+
+
+1- the address width is 12 bit cuz we have a 4096 word
+
+2-
