@@ -8,10 +8,10 @@ entity alu is
     reset : in std_logic;
 
     -- control signals
-    control_signal : in std_logic_vector(31 downto 0);
+    control_signal : in std_logic_vector(2 downto 0);
 
-    -- inputs
-    operand1 : in std_logic_vector(31 downto 0);
+    -- inputs (assume signed inputs)
+    operand1 : in std_logic_vector(31 downto 0); 
     operand2 : in std_logic_vector(31 downto 0);
 
     result : out std_logic_vector(31 downto 0);
@@ -20,43 +20,102 @@ entity alu is
 end entity alu;
 
 architecture rtl of alu is
-
   -- Signals
   signal zeroFlag : integer := 0;
   signal carryFlag : integer := 1;
   signal negativeFlag : integer := 2;
-  
 
 begin
-
     process (clk) is
-    variable temp : std_logic_vector(32 downto 0); --33bits
+        variable result_ext : signed(32 downto 0);
+        variable result_temp : signed(31 downto 0);
 
     begin
         if (reset = '1') then
             result <= (others => '0');
+            flags <= (others => '0');
 
         elsif rising_edge(clk) then
             case control_signal is
-                when "001" => -- add
-                    result <= operand1 + operand2;
-                    temp := operand1 + operand2;
-                    if (temp(32) = '1') then
-                        flags(zeroFlag) <= 1;
+                -- ADD
+                when "001" =>                     
+                    result_ext := resize(signed(operand1), 33) + resize(signed(operand2), 33);
+                    result_temp := result_ext(31 downto 0);
+
+                    result <= std_logic_vector(result_temp);
+
+                    flags <= (others => '0');
+
+                    if (result_temp = 0) then
+                        flags(zeroFlag) <= '1';
                     end if;
 
+                    flags(negativeFlag) <= result_temp(31);
 
-                when "010" => -- sub
-                    result <= operand1 - operand2;
+                    flags(carryFlag) <= result_ext(32);
 
-                when "654" => -- and
-                    result <= operand1 and operand2;
+                -- SUB
+                when "010" => 
+                    result_ext := resize(signed(operand1), 33) - resize(signed(operand2), 33);
+                    result_temp := result_ext(31 downto 0);
 
-                when "abc" => -- not
-                    result <= not operand1;
+                    result <= std_logic_vector(result_temp);
 
-                when "efg" => -- increment
-                    result <= operand1 + 1;
+                    flags <= (others => '0');
+
+                    if (result_temp = 0) then
+                        flags(zeroFlag) <= '1';
+                    end if;
+
+                    flags(negativeFlag) <= result_temp(31);
+
+                    flags(carryFlag) <= result_ext(32);
+
+                -- AND
+                when "011" =>
+                    result_temp := signed(operand1) and signed(operand2);
+                    result <= std_logic_vector(result_temp);
+
+                    flags <= (others => '0');
+
+                    if (result_temp = 0) then
+                        flags(zeroFlag) <= '1';
+                    end if;
+
+                    flags(negativeFlag) <= result_temp(31);
+
+                -- NOT
+                when "100" => 
+                    result_temp := not signed(operand1);
+                    result <= std_logic_vector(result_temp);
+
+                    flags <= (others => '0');
+
+                    if (result_temp = 0) then
+                        flags(zeroFlag) <= '1';
+                    end if;
+
+                    flags(negativeFlag) <= result_temp(31);
+
+                -- Increment
+                when "101" => 
+                    result_ext := resize(signed(operand1), 33) + 1;
+                    result_temp := result_ext(31 downto 0);
+
+                    result <= std_logic_vector(result_temp);
+
+                    flags <= (others => '0');
+
+                    if (result_temp = 0) then
+                        flags(zeroFlag) <= '1';
+                    end if;
+
+                    flags(negativeFlag) <= result_temp(31);
+
+                    flags(carryFlag) <= result_ext(32);
+                when others =>
+                    result <= (others => '0');
+                    flags  <= (others => '0');
                 end case;
         end if;
     end process;
